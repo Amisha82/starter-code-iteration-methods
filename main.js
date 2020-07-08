@@ -21,6 +21,26 @@ function printKata(kataNumber, object) {
     // http://mdn.io/json.stringify
     const stringifiedObject = JSON.stringify(object)
     detailsElement.append(stringifiedObject)
+
+
+
+
+    //for (let i = 0; i < object.length; i++) {
+    //  let currentUser = object[i]
+    //console.log(currentUser)
+    //let userDiv = document.createElement('div')
+    //userDiv.className = "user"
+
+    //for (key in currentUser) {
+    //  let propertyDiv = document.createElement('div')
+    //propertyDiv.className = "property"
+    //propertyDiv.append(key + ": " + currentUser[key])
+    //userDiv.append(propertyDiv)
+    //}
+    //detailsElement.append(userDiv)
+    //}
+
+
 }
 
 //Kata0
@@ -64,7 +84,7 @@ printKata(5, ageactive)
 //Show the balance of every user in the array from the "ZENCO" company.
 
 const ZENCObal = users
-    .filter(user => user.company)
+    .filter(user => user.company = "ZENCO")
     .map(user => user.balance)
 printKata(6, ZENCObal)
 
@@ -74,3 +94,16 @@ const usertag = users
     .filter(user => (user.tags).includes("fugiat"))
     .map(user => user.age)
 printKata(7, usertag)
+
+
+
+
+
+
+
+
+
+
+
+
+
