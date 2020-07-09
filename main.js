@@ -84,7 +84,7 @@ printKata(5, ageactive)
 //Show the balance of every user in the array from the "ZENCO" company.
 
 const ZENCObal = users
-    .filter(user => user.company = "ZENCO")
+    .filter(user => user.company === "ZENCO")
     .map(user => user.balance)
 printKata(6, ZENCObal)
 
